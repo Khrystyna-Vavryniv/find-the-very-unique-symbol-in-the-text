@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+   background: url(./img/AdobeStock_100916405.jpeg);
+}
+
+.content-wrapper{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    color:rgba(255, 255, 255, 0.888);
+    text-align: left;
+    font-weight: 500;
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.inputs-wrapper{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.form-input{
+    background-color: #ffffff;
+    width: 630px;
+    height: 480px;
+    padding: 20px;
+    margin: 20px;
+    border: none;
+}
+
+.form-input:focus-visible{
+    outline:2px solid #e9b932;
+}
+
+#convert-button{
+    width: 200px;
+    height: 40px;
+    margin: 0px 40px;
+    background:#e9b932;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#convert-button:hover{
+    background:#eeb417;
+}
+
+.description {
+    text-align: center;
+    width: 630px;
+    margin: 20px 0;
+    color: #ffffffdc;
+    font-size: 15px;
+}
+.yellow {
+    color: yellow;
+    font-weight: bold;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    color: #ffffffa4;
+    font-size: 12px;
+}
+footer p{
+    text-align: center;
+}
+@media (max-width: 1354px) {
+    .content-wrapper{
+       width: 630px;
+       margin: auto;
+    }
+    .heading{
+        font-size: 28px;
+        text-align: center;
+    }
+    .inputs-wrapper{
+        width: 630px;
+        flex-direction: column;
+    }
+
+    .form-input{
+        width: 630px;
+        height: 300px;
+    }
+
+    .textarea-wrapper{
+        width: 630px
+    }
+}
+
+@media (max-width: 630px) {
+    .content-wrapper, .form-input, .textarea-wrapper, .inputs-wrapper, .description, footer p{
+        width: 320px;
+    }
+}
