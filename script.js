@@ -17,7 +17,7 @@ function findUniqueSymbolInText(text) {
 let words = []
 
 function getArrFromStr(str) {
-  str.replace(/[\r\n]/gm, " ").split(' ').map(item => words.push(item))
+  str.replace(/["'\r\n]/gm, " ").split(' ').map(item => words.push(item))
   words = words.filter(word => word !== "")
   return words;
 }
