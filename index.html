@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON converter App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <h1 class="heading heading-1">JSON data filtering & sorting App</h1>
+        <div class="json-form">
+            <div class="inputs-wrapper">
+                <div class="textarea-wrapper">
+                    <textarea  class="json-form-input" id="entry-value" placeholder="Insert your JSON here"></textarea>
+                </div>
+                <div class="textarea">
+                    <textarea  class="json-form-input" id="output-value" value="">The result</textarea>
+                </div>
+            </div>
+            <button id="convert-button">Filter JSON data</button>
+            <div class="description">
+                <p>While entering the JSON data please keep the next formatting:</p>
+                <p><pre>
+                    
+                    {<span class="green">"data"</span>: [{"user": "mike@mail.com", "rating": 20, "disabled": false},
+                              {"user": "greg@mail.com", "rating": 14, "disabled": false},
+                              {"user": "john@mail.com", "rating": 25, "disabled": true}],
+                    <span class="green">"condition"</span>: {<span class="yellow">"include"</span>: [{"disabled": true}], <span class="yellow">"sort_by"</span>: ["rating"]}}
+
+                </pre></p>
+                <p>"condition" supports "include" and "exclude" keys</p>
+
+            </div>
+            <p><pre></pre></p>
+        </div>
+    </div>
+<script src="./app.js"></script>
+</body>
+</html>
